@@ -1,0 +1,253 @@
+/* src/app/services/electrician/projects/[projectId]/ProjectDetails.module.css */
+
+/* ========================================
+   FADE ANIMATIONS
+   ======================================== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ========================================
+   GRID & BACKGROUND ANIMATIONS
+   ======================================== */
+
+@keyframes gridFlow {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+}
+
+/* ========================================
+   PROGRESS & LOADING ANIMATIONS
+   ======================================== */
+
+@keyframes progressFill {
+  from {
+    width: 0%;
+  }
+}
+
+@keyframes progressPulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(231, 157, 19, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(231, 157, 19, 0.8);
+  }
+}
+
+/* ========================================
+   SPIN ANIMATIONS
+   ======================================== */
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinReverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/* ========================================
+   HOVER & INTERACTION ANIMATIONS
+   ======================================== */
+
+@keyframes slideUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* ========================================
+   SHIMMER & GLOW EFFECTS
+   ======================================== */
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(12, 151, 132, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(12, 151, 132, 0.6);
+  }
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+.fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.fadeInDown {
+  animation: fadeInDown 0.6s ease-out forwards;
+}
+
+.fadeIn {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.gridFlow {
+  animation: gridFlow 20s linear infinite;
+}
+
+.pulseGlow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.progressFill {
+  animation: progressFill 2s ease-out forwards;
+}
+
+.progressPulse {
+  animation: progressPulse 2s ease-in-out infinite;
+}
+
+.spinSlow {
+  animation: spinSlow 3s linear infinite;
+}
+
+.spinReverse {
+  animation: spinReverse 3s linear infinite;
+}
+
+.slideUp {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.scaleIn {
+  animation: scaleIn 0.5s ease-out forwards;
+}
+
+.bounce {
+  animation: bounce 1s ease-in-out infinite;
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s linear infinite;
+}
+
+.glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* ========================================
+   DELAY UTILITIES (0-2000ms)
+   ======================================== */
+
+.delay0 { animation-delay: 0ms; }
+.delay100 { animation-delay: 100ms; }
+.delay200 { animation-delay: 200ms; }
+.delay300 { animation-delay: 300ms; }
+.delay400 { animation-delay: 400ms; }
+.delay500 { animation-delay: 500ms; }
+.delay600 { animation-delay: 600ms; }
+.delay700 { animation-delay: 700ms; }
+.delay800 { animation-delay: 800ms; }
+.delay900 { animation-delay: 900ms; }
+.delay1000 { animation-delay: 1000ms; }
+.delay1100 { animation-delay: 1100ms; }
+.delay1200 { animation-delay: 1200ms; }
+.delay1500 { animation-delay: 1500ms; }
+.delay2000 { animation-delay: 2000ms; }
+
+/* ========================================
+   INITIAL STATE (Hidden before animation)
+   ======================================== */
+
+.hiddenInitial {
+  opacity: 0;
+}
